@@ -21,40 +21,43 @@
           </ul>
         </div>
       </nav>
-  <!-- Hero Section -->
-   <div class="bg-cover" style="background-image: url('https://i.pinimg.com/1200x/1f/22/6d/1f226d5e7e3485a898ceaa3eed889b86.jpg');">
+  <div class="bg-cover" style="background-image: url('https://i.pinimg.com/1200x/1f/22/6d/1f226d5e7e3485a898ceaa3eed889b86.jpg');">
   <section class="text-center pt-10 text-white ">
     <div class=" mx-auto text-center">
         <h2 class="text-4xl font-bold text-[#563b1e] mb-2">Join the Community</h2>
         <p class="text-lg text-gray-700">Register now to be part of events, mentorship, and exclusive resources.</p>
-       
+
       </div>
-   
+
   </section>
 
-  <!-- Registration Form -->
   <section class=" px-6 flex justify-center pt-3">
+<<<<<<< HEAD
     <form class="w-full max-w-md bg-[#ffface]/80 shadow-xl rounded-xl p-8 space-y-6 transition-all duration-300 hover:shadow-2xl">
       <h2 class="text-2xl font-semibold text-center text-[#563b1e]">Register Now</h2>
+=======
+    <form id="registrationForm" class="w-full max-w-md bg-[#ffface]/80 shadow-xl rounded-xl p-8 space-y-6 transition-all duration-300 hover:shadow-2xl">
+      <h2 class="text-2xl font-semibold text-center text-[#4b4b4b]">Register Now</h2>
+>>>>>>> 49154bf80d6e849a592fb063b263232ee579c2e0
 
       <div>
-        <label class="block mb-1 text-sm font-medium">Full Name</label>
-        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]" required />
+        <label for="fullName" class="block mb-1 text-sm font-medium">Full Name</label>
+        <input type="text" id="fullName" name="fullName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]" required />
       </div>
 
       <div>
-        <label class="block mb-1 text-sm font-medium">Email Address</label>
-        <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]" required />
+        <label for="email" class="block mb-1 text-sm font-medium">Email Address</label>
+        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]" required />
       </div>
 
       <div>
-        <label class="block mb-1 text-sm font-medium">Phone Number</label>
-        <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]" required />
+        <label for="phoneNumber" class="block mb-1 text-sm font-medium">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]" required />
       </div>
 
       <div>
-        <label class="block mb-1 text-sm font-medium">Area of Interest</label>
-        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]">
+        <label for="areaOfInterest" class="block mb-1 text-sm font-medium">Area of Interest</label>
+        <select id="areaOfInterest" name="areaOfInterest" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#99948e]">
           <option>Mentorship</option>
           <option>Community Events</option>
           <option>Volunteering</option>
@@ -122,5 +125,50 @@
 
 </div>
 
+<<<<<<< HEAD
+=======
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form values by their IDs
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const areaOfInterest = document.getElementById('areaOfInterest').value;
+
+        // Create a data object to send
+        const formData = {
+            fullName,
+            email,
+            phoneNumber,
+            areaOfInterest
+        };
+
+        try {
+            // Send data to the backend API
+            const response = await fetch('https://iucee-club-backend.onrender.com/api/register', { 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json(); // Parse the JSON response
+
+            if (response.ok) { 
+                alert(result.message); 
+                this.reset(); 
+            } else {
+                alert('Error: ' + result.message); 
+            }
+        } catch (error) {
+            console.error('Network error:', error); 
+            alert('Could not connect to the server. Please try again later.'); 
+        }
+    });
+</script>
+>>>>>>> 49154bf80d6e849a592fb063b263232ee579c2e0
 </body>
 </html>
