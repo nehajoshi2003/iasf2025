@@ -23,26 +23,32 @@
 
 <body class="bg-[#952e36] text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="bg-[#952f36] shadow-md px-6 py-4 sticky top-0 z-50">
+  <nav class="bg-[#952f36] shadow-md px-6  sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-[#3d0106]">IUCEE Club</h1>
-      <ul class="flex space-x-6 text-md font-medium">
-          <li><a href="index.html" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">Home</a></li>
-          <li><a href="about.html" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">About</a></li>
-          <li><a href="mentor.html" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">Mentorship</a></li>
-          <li><a href="vol.html" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">Volunteers</a></li>
-          <li><a href="iasf25.html" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">IASF 2025</a></li>
-          <li><a href="com.html" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">Community Reachout</a></li>
-          <li><a href="reg.html" target="_blank" class="font-bold text-[#f1efe6] hover:text-[--accent-gold]">Register</a></li>
+      <!-- Logo -->
+      <img src="images/iu.png" style="width: 130px;">
+  
+      <!-- Hamburger (mobile) -->
+      <button id="menu-toggle" class="md:hidden text-[#f1efe6] focus:outline-none text-3xl">
+        ☰
+      </button>
+  
+      <!-- Nav Links -->
+      <ul id="nav-links" class="hidden md:flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 text-md font-medium absolute md:static top-16 left-0 w-full md:w-auto bg-[#952f36] md:bg-transparent px-6 py-4 md:py-0">
+        <li><a href="index.html" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">Home</a></li>
+        <li><a href="about.html" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">About</a></li>
+        <li><a href="mentor.html" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">Mentorship</a></li>
+        <li><a href="vol.html" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">Team</a></li>
+        <li><a href="iasf25.html" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">IASF 2025</a></li>
+        <li><a href="com.html" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">Community Reachout</a></li>
+        <li><a href="reg.html" target="_blank" class="font-bold text-[#f1efe6] hover:text-[#f0a09f]">Register</a></li>
       </ul>
     </div>
   </nav>
-
   <!-- IASF Projects Section -->
 
 <div class="bg-cover" style="background-image: url('https://i.pinimg.com/736x/e0/03/17/e0031757c9f645ad3394f288af477d87.jpg');">
-  <section class="pt-32 pb-16 px-6" >
+  <section class="pt-16 pb-16 px-6" >
     <div class="text-center max-w-4xl mx-auto mb-10">
       <h2 class="text-4xl font-bold text-[#832830] mb-4">IASF 2025 Projects</h2>
       <p class="text-lg text-gray-700">Explore the impactful and innovative projects presented by our team at IASF 2025.</p>
@@ -88,51 +94,42 @@
     <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
       <!-- Team Member Card -->
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g8.JPG" alt="Team Photo" class="mx-auto w-34 h-34 object-cover mb-4">
+       
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g4.JPG" alt="Team Photo" class="mx-auto  object-cover w-34 h-[238px] mb-4">
+
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g5.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+      
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g6.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+       
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g7.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+      
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g9.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+   
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g10.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+       
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g11.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+        
       </div>
       <div class="bg-beige rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/150" alt="Team Photo" class="mx-auto w-28 h-28 object-cover rounded-full mb-4">
-        <h3 class="text-xl font-bold text-brown">Member Name</h3>
-        <p class="text-sm text-gray-600">Role / Contribution</p>
+        <img src="images/g12.JPG" alt="Team Photo" class="mx-auto  object-cover  w-34 h-[238px] mb-4">
+       
       </div>
-      <!-- Duplicate this for each team member -->
+     
     </div>
   </section>
   <footer class="bg-[#952e36] text-[#f1efe6] px-6  mt-20">
@@ -170,16 +167,13 @@
   
       <!-- Follow Us -->
       <div>
-        <h2 class="text-xl font-bold mb-4 mt-10">Follow Us</h2>
+        <h2 class="text-xl font-bold mb-4">Follow Us</h2>
         <div class="flex justify-center md:justify-start gap-4">
-          <a href="#" class="hover:text-yellow-400" target="_blank">
-            <i class="fab fa-instagram text-2xl"></i>
+          <a href="https://www.instagram.com/kletechiuceechapter?igsh=MXJjZXB3a3poNnB5eA==" class="hover:text-yellow-400" target="_blank">
+           <img src="images/instagram (4).png" class="w-[30px]">
           </a>
-          <a href="#" class="hover:text-yellow-400" target="_blank">
-            <i class="fab fa-linkedin text-2xl"></i>
-          </a>
-          <a href="#" class="hover:text-yellow-400" target="_blank">
-            <i class="fab fa-twitter text-2xl"></i>
+          <a href="https://www.linkedin.com/company/iucee-kletu/" class="hover:text-yellow-400" target="_blank">
+           <img src="images/linkedin (2).png" class="w-[30px]">
           </a>
         </div>
       </div>
@@ -188,6 +182,14 @@
     <p class="text-center text-sm mt-10">&copy; 2025 IUCEE Club. All rights reserved.</p>
   </footer>
 </div>
+<!-- Toggle script -->
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
